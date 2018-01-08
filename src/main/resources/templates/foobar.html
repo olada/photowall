@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Photowall Prototype</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <span th:text="${form}">Bitte Datei auswählen</span>
+    <form th:action="@{/upload}" enctype="multipart/form-data" method="post">
+        <input type="file" name="file" />
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
